@@ -15,14 +15,4 @@
 
 *Запросить примеры*
 
-Команды можно было передавать как json в POST-запросе или как параметры запроса
-Вариант 1 Пример: 
-{
-    "file_name": "apache_logs.txt",
-    "cmd1": "filter",
-    "value1": "get",
-    "cmd2": "limit",
-    "value2": 5
-}
-
-Вариант 2 Пример: http://127.0.0.1:5000/perform_query/?cmd1=filter&value1=GET&cmd2=limit&value2=5
+Пример: http://127.0.0.1:5000/perform_query/?cmd1=filter&value1=GET&cmd2=limit&value2=5

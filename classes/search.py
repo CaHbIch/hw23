@@ -12,7 +12,8 @@ class Search:
     def sort(self: Iterator, order: str = 'asc') -> List:
         """Сортировка данных в порядке возрастания или убывания"""
         if order not in ('asc', 'desc'):
-            raise ValueError('В функцию сортировки передан неверный аргумент, разрешено использовать только по возрастанию или по убыванию')
+            raise ValueError('В функцию сортировки передан неверный аргумент, разрешено использовать '
+                             'только по возрастанию или по убыванию')
         if order == 'desc':
             return sorted(self, reverse=True)
         return sorted(self, reverse=False)
@@ -32,4 +33,3 @@ class Search:
     def unique(self: Iterator, *args) -> Set:
         """Возвращать только уникальные строки"""
         return set(self)
-
